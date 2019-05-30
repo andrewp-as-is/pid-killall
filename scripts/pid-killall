@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) [-signal] pid" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# == 0 ]] || [[ $# -gt 2 ]] && usage
+
+[[ $# == 1 ]] && set -- -SIGTERM "$1"
+
+pids() {
+    local childs=
+    childs="$(pgrep -P "$1")"
+    [[ -n "$childs" ]] && while IFS= read child; do
+        pids "$child"
+    done <<< "$childs"
+    [[ $1 != $$ ]] && echo "$1"
+}
+
+pids="$(pids "$2")"
+IFS=$'\n'
+/bin/kill "$1" $pids 2> /dev/null;:

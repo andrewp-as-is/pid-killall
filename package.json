@@ -1,0 +1,13 @@
+{
+  "name": "pid-killall",
+  "version": "2019.5.15",
+  "description": "kill process and child processes",
+  "keywords": [
+    "kill"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/pid-killall",
+  "license": "Unlicense",
+  "bin": {
+    "pid-killall": "./scripts/pid-killall"
+  }
+}
