@@ -1,25 +1,22 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
+https://readme42.com
 -->
+
+
 
 [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/v/pid-killall.svg?maxAge=3600)](https://pypi.org/project/pid-killall/)
-[![](https://img.shields.io/npm/v/pid-killall.svg?maxAge=3600)](https://www.npmjs.com/package/pid-killall)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/pid-killall.svg?branch=master)](https://travis-ci.org/looking-for-a-job/pid-killall/)
+[![](https://img.shields.io/npm/v/pid-killall.svg?maxAge=3600)](https://www.npmjs.com/package/pid-killall)[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/pid-killall/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/pid-killall/actions)
 
-#### Installation
-```bash
-$ [sudo] npm i -g pid-killall
-```
+### Installation
 ```bash
 $ [sudo] pip install pid-killall
 ```
 
-#### Scripts usage
-command|`usage`
--|-
-`pid-killall` |`usage: pid-killall [-signal] pid`
+```bash
+$ [sudo] npm i -g pid-killall
+```
 
 #### Examples
 ```bash
@@ -32,5 +29,5 @@ pid-killall -9 <pid>
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>
