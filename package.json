@@ -1,6 +1,6 @@
 {
   "name": "pid-killall",
-  "version": "2019.5.15",
+  "version": "2020.12.3",
   "description": "kill process and child processes",
   "keywords": [
     "kill"
